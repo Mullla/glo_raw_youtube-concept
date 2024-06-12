@@ -1,0 +1,37 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Youtube
+    link(rel="stylesheet", href="./css/style.min.css")
+  body 
+    header.header
+      button.menu-btn 
+        span.menu-line 
+        span.menu-line 
+        span.menu-line 
+      img.logo-img(src="./img/logo.svg", alt="logo: Youtube")
+      .search-group 
+        input.search-input(type="search", name="search", placeholder="Search")
+        button.search-btn(type="submit") 
+          svg.icon.search-icon(width="19", height="19")
+            use(xlink:href="./img/icons.svg#search")
+      //- search-group
+      .icons-group 
+        a.icons-link(href="#")
+          svg.icon.video-icon(width="27", height="20")
+            use(xlink:href="./img/icons.svg#video")
+        a.icons-link(href="#")
+          svg.icon.apps-icon(width="21", height="21")
+            use(xlink:href="./img/icons.svg#apps")
+        a.icons-link(href="#")
+          svg.icon.notification-icon(width="22", height="26")
+            use(xlink:href="./img/icons.svg#notification")
+      //- icons-group
+      a.user(href="#")
+        img.user-avatar(src="./img/avatar.jpeg" alt="photo: user avatar")
+      //- user
+
+    script(src="./js/script.js") 
